@@ -1,0 +1,33 @@
+<mat-toolbar class="toolbar" color="primary">
+  <mat-toolbar-row>
+    <div class="logo">
+      <button mat-button routerLink="home">Home</button>
+      <button mat-button routerLink="about">About</button>
+      <button mat-button routerLink="contact-us">Contact Us</button>
+    </div>
+
+    <div style="width: 80%">
+    <div fxLayout="row wrap" fxLayoutAlign="end start">
+      
+    </div>
+  </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br>
+
+<div fxLayout="row wrap" >
+  <div fxFlex >
+    <mat-card class="main-container">
+      <mat-card-title class="primary">
+        {{ assignment }}
+      </mat-card-title>
+
+      <br><br>
+
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
