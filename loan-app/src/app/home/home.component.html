@@ -1,38 +1,48 @@
-<div fxLayout="row wrap" fxLayoutGap="20px">
-   <div fxFlex>
-    <mat-card class="mat-elevation-z8 loan-card">
-        <mat-card-title>Loan Calculator</mat-card-title>
-        <br><br>
-        <mat-card-content>
-            <form action="" fxLayout="column">
-                <mat-label>Loan Amount</mat-label>
-                <mat-form-field fxFlex appearance="fill">
-                    <mat-label>Loan Amount</mat-label>
-                    <input type="text" name="" id="" placeholder="ex: 10000">
-                </mat-form-field>
-                <mat-label>Interest Rate</mat-label>
-                <mat-form-field fxFlex appearance="fill">
+<div fxLayout="row wrap" fxLayoutGap="20px"> 
+    <div fxFlex>
+     <mat-card class="mat-elevation-z8 loan-card" >
+         <mat-card-title>Loan Calculator</mat-card-title>
+         <br><br>
+         <mat-card-content>
+             <form action="" fxLayout="column">
+                 <mat-label>Loan Amount</mat-label>
+                 <mat-form-field fxFlex appearance="fill">
+                     <mat-label>Loan Amount:</mat-label>
+                     <input type="text" name="" id="" placeholder="ex: 10000">
+                 </mat-form-field>
+                 <mat-label>Interest Rate:</mat-label>
+                 <mat-form-field fxFlex appearance="fill">
+                     
+                   <input type="text" name="" id="" placeholder="ex: 1.5">
+                 </mat-form-field>
+                 <mat-label>Number of Years:
                     
-                  <input type="text" name="" id="" placeholder="ex: 1.5">
-                </mat-form-field>
-                <mat-label>Number of Years</mat-label>
-                <mat-form-field fxFlex appearance="fill" >
-                    
-                   <input type="text" name="" id="" placeholder="ex: 20">
-                </mat-form-field>
-                <button type="submit" >Submit</button>
-            </form>
-        </mat-card-content>
-    </mat-card>
-   </div>
-  
-   <div fxFlex>
-    <mat-card class="mat-elevation-z8 loan-card">
-        <mat-card-title>Your Loan Amount</mat-card-title>
-        <mat-card-content>
+                 </mat-label>
+                 <mat-form-field fxFlex appearance="fill" >
+                     
+                    <input type="text" name="" id="" placeholder="ex: 20">
+                 </mat-form-field>
+                 <br>
+                 <button type="submit" >Submit</button>
+             </form>
+         </mat-card-content>
+     </mat-card>
+    </div>
+   
+    <div fxFlex>
+     <mat-card class="mat-elevation-z8 loan-card">
+         <mat-card-title>Your Loan Amount</mat-card-title>
+         <br><br><br>
+         <mat-card-content class="money">
+             $$$$.$$
+         </mat-card-content>
+         <br><br><br><br>
+         <mat-card-title>Interest Paid</mat-card-title>
+         <br><br><br>
+         <mat-card-content class="money">
             $$$$.$$
-        </mat-card-content>
-    </mat-card>
-</div>
-</div>
-
+         </mat-card-content>
+         <br><br><br>
+     </mat-card>
+    </div>
+ </div>

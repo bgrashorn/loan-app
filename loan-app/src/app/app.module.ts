@@ -17,13 +17,19 @@ import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { InterestComponent } from './interest/interest.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactUsComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent,
+    InterestComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

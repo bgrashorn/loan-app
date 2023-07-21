@@ -1,9 +1,11 @@
-<mat-toolbar class="toolbar" color="primary">
+<mat-toolbar class="toolbar loan-card" color="primary" >
   <mat-toolbar-row>
     <div class="logo">
-      <button mat-button routerLink="home">Home</button>
+      <img src="./assets/slytherin.jpg" alt="Slytherin Logo" style="width: 5%; padding: 10px 5px 0;">
+      <button mat-button routerLink="/">Home</button>
       <button mat-button routerLink="about">About</button>
       <button mat-button routerLink="contact-us">Contact Us</button>
+      
     </div>
 
     <div style="width: 80%">
@@ -14,20 +16,21 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<br>
 
-<div fxLayout="row wrap">
-  <div fxFlex >
-    <mat-card class="main-container">
-      <mat-card-title >
+<div fxLayout="row wrap" class="toolbar">
+  <div fxFlex class="toolbar" >
+    <mat-card class="main-container toolbar" style="text-align: center;">
+      <mat-card-title style="font-size: 36px;" >
         {{ assignment }}
       </mat-card-title>
 
       <br><br>
 
       <mat-card-content>
-        <router-outlet></router-outlet>
+        
       </mat-card-content>
     </mat-card>
   </div>
 </div>
+<br><br><br><br>
+<router-outlet></router-outlet>
