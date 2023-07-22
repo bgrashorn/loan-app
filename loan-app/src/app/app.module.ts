@@ -20,6 +20,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { InterestComponent } from './interest/interest.component';
 import { PaymentComponent } from './payment/payment.component';
+import { Validators } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { PaymentComponent } from './payment/payment.component';
     MatTableModule,
     MatDialogModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    Validators,
+    FormBuilder
   ],
   providers: [],
   bootstrap: [AppComponent]
