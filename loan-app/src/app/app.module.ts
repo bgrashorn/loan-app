@@ -48,7 +48,8 @@ import { FormBuilder } from '@angular/forms';
     FormsModule,
     MatFormFieldModule,
     Validators,
-    FormBuilder
+    FormBuilder,
+    HomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
