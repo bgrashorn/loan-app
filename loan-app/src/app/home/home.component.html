@@ -14,55 +14,66 @@
     ========================================================================================================================
 -->
  
-<div fxLayout="row wrap">
-    <div fxFlex>
-        <mat-card class="mat-elevation-z8 loan-card">
-            <mat-card-title>Loan Calculator</mat-card-title>
-            <br><br>
-            <mat-card-title>Loan Amount:</mat-card-title>
-            <mat-card-content>
-                <form formGroup="loanData">
+
+    <mat-card class="mat-elevation-z8 calc-card">
+        <mat-card-title style="font-size: 36px;">Loan Calculator</mat-card-title>
+        <br><br><br>
+        
+        <mat-card-content class="calc-card">
+            <form [formGroup]="loanData" class="loan-form">
+                <div class="form-div">
+                    <mat-card-title style="color: black; font-size: 28px;">Loan Amount:</mat-card-title>
+                
                     <mat-form-field>
                         <input type="text" name="amount" required id="amount" matInput formControlName="amount" placeholder="Ex: 10000">
                     </mat-form-field>
-                    <mat-card-title>Interest Rate:</mat-card-title>
+                    <br>
+                    <mat-card-title style="color: black; font-size: 28px;">Interest Rate:</mat-card-title>
+                    
                     <mat-form-field>
                         <input type="text" name="interest" required id="interest" matInput formControlName="interest" placeholder="Ex: 1.5">
                     </mat-form-field>
-                    <mat-card-title>Number of Years</mat-card-title>
+                    <br>
+                    <mat-card-title style="color: black; font-size: 28px;">Number of Years:</mat-card-title>
+                    
                     <mat-form-field>
                         <input type="text" name="years" required id="years" matInput formControlName="years" placeholder="Ex: 20">
                     </mat-form-field>
                     <br><br>
-                    <button mat-raised-button class="btn" type="submit" [disabled]="!loanData.valid" (click)="calcResults()">Submit</button>
-
+                    <button mat-raised-button class="btn" type="submit" (click)="calcResults()">Submit</button>
+    
                     <br><br><br>
                     <button mat-raised-button (click)="clearEntries()">Reset</button>
-                </form>
-            </mat-card-content>
-        </mat-card>
-    </div>
-</div>
+                </div>
+                
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+        
+        
+   
+
     
 
 
 
 
 
-    <div fxFlex>
-     <mat-card class="mat-elevation-z8 loan-card">
-         <mat-card-title>Your Loan Amount</mat-card-title>
+   
+     <mat-card class="mat-elevation-z8 results-card">
+         <mat-card-title style="font-size: 36px;">Your Loan Amount</mat-card-title>
          <br><br><br>
          <mat-card-content class="money">
             <app-payment [payment]="payment" style="font-size: 36px"></app-payment>
          </mat-card-content>
          <br><br><br><br>
-         <mat-card-title>Interest Paid</mat-card-title>
+         
          <br><br><br>
          <mat-card-content class="money">
-            <app-interest [interest]="interest" style="font-size: 36px;">
+            <app-interest [interest]="interest" style="font-size: 36px;"></app-interest>
          </mat-card-content>
          <br><br><br>
      </mat-card>
-    </div>
- <!-- </div> -->
+  
+

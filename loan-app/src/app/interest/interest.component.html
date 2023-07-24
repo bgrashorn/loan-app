@@ -14,10 +14,11 @@
     ========================================================================================================================
 -->
 <div>
-    <div>Interest Paid:</div>
+    <div style="color: black; font-size: 28px;">Interest Paid:</div>
     <br><br><br>
     <div>
-        {{ "$" + (interest | number : "1.2-2") }}
+        {{ "$ " + (interest | number : "1.2-2") }}
     </div>
+    <!-- 1.2-2 makes it use 1-2 decimal pointss -->
     <br><br><br>
 </div>

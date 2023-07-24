@@ -15,10 +15,11 @@
 -->
 
 <div>
-    <div>Monthly Payment</div>
+    <div style="color: black; font-size: 28px;">Monthly Payment:</div>
     <br><br><br>
     <div>
-        {{ "$" + (payment | number : "1.2-2") }}
+        {{ "$ " + (payment | number : "1.2-2") }}
     </div>
+    <!-- 1.2-2 makes it use 1-2 decimal pointss -->
     <br><br><br>
 </div>

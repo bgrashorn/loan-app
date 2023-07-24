@@ -1,9 +1,4 @@
-.loan-card {
-    width: 60%;
-    margin: auto;
-    background-color: #1B5E20;
-    color:   #AAAAAA;
-}
+
 
 .mat-card-title {
     text-align: center;
@@ -16,8 +11,8 @@
 }
 
 input {
-    line-height: 2;
-    width: 50%;
+    line-height: 3;
+    width: 100%;
     background-color: #81C784;
     
 }
@@ -25,4 +20,23 @@ input {
 button {
     line-height: 2;
     background-color: #81C784;
+}
+
+.calc-card {
+    width: 40%;
+    float: left;
+    background-color: #1B5E20;
+    margin-left: 5%;
+}
+
+.results-card {
+    width: 40%;
+    float: right;
+    background-color: #1B5E20;
+   margin-right: 5%;
+}
+
+
+.loan-form {    
+    text-align: center;
 }

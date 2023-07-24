@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
 
   calcResults() {
     let formValues = this.loanData.value;
-    let amount = parseFloat(formValues.amounts);
+    let amount = parseFloat(formValues.amount);
     let interest = parseFloat(formValues.interest);
     let years = parseFloat(formValues.years);
 
@@ -74,10 +74,10 @@ export class HomeComponent implements OnInit {
     let ratePerPeriod = ((interest / 100) / 12);
 
     this.payment = 
-      (amount = (ratePerPeriod * Math.pow((ratePerPeriod + 1), months))) /
+      (amount * (ratePerPeriod * Math.pow((ratePerPeriod + 1), months))) /
       (Math.pow((1 + ratePerPeriod), months) - 1);
 
-      this.interest = (this.payment * months) - amount;
+    this.interest = (this.payment * months) - amount;
   }
 
   clearEntries() {
